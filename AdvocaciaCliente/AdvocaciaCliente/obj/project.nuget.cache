@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IeGsQt0fHkCjm/X0rONE/sWpk+/tvnI6LqKvXfMgwXEnfAjHkvk1oGv0KW9wcmkBg7LwmkG/R6318+R8+fgSPg==",
+  "dgSpecHash": "hngU9YDD2kTi9gjOiqpzdHN3Ns0/Al3c2Wr7b8aHqYSg4nc4Ef992BOlnUmHwaN9PAB71brGk6nVcYoavKf9+Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\android\\Documents\\MAIA C\\AdvocaciaCliente\\AdvocaciaCliente\\AdvocaciaCliente.csproj",
+  "projectFilePath": "C:\\Users\\android\\Documents\\juridicosiscsharp\\AdvocaciaCliente\\AdvocaciaCliente\\AdvocaciaCliente.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\android\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\android\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
