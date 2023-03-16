@@ -1,18 +1,17 @@
-﻿using AdvocaciaCliente.Models;
+﻿using System;
 using Dapper;
-using System;
-using System.Collections.Generic;
+using AdvocaciaCliente.Models;
 using System.Data.SqlClient;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace AdvocaciaCliente.DAL
 {
-    public class ClienteDao
+    public class ClienteDAO
     {
         private SqlConnection _conexao;
-
-        public ClienteDao()
+        public ClienteDAO()
         {
             _conexao = ConexaoBD.getConexao();
         }
@@ -29,7 +28,7 @@ namespace AdvocaciaCliente.DAL
             {
                 string sql = "INSERT INTO [dbo].[Cliente]  ([CLINOME],[CLIENDERECO] ,[CLINUMEROENDERECO], " +
                     "[CIDADE]  ,[ESTADOSIGLA]     ,[CLICPF]  ,[CLICNPJ]) " +
-                    "VALUES  (@CLINOME, @CLIENDERECO,  @CLINUMEROENDERECO , @CIDADE, @ESTADOSIGLA, @CLICPF, @CLICNPJ) ";
+                    "VALUES  @CLINOME, @CLIENDERECO,  @CLINUMEROENDERECO , @CIDADE, @ESTADOSIGLA, @CLICPF, @CLICNPJ ";
                 int qtdInserida = _conexao.Execute(sql, cliente);
                 if (qtdInserida > 0)
                 {
@@ -47,9 +46,7 @@ namespace AdvocaciaCliente.DAL
 
                 return false;
             }
-
-
-
         }
+
     }
 }

@@ -3,3 +3,28 @@
 *@
 @{
 }
+<div id="divtitulo">
+    <h1>Lista de TipoPessoa</h1>
+</div>
+<div id="divtabela">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">PESSOACODIGO</th>
+                <th scope="col">PESSOATIPO</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewBag.listaTipoPessoa)
+            {
+                <tr>
+                    <td>@item.PESSOACODIGO</td>
+                    <td>@item.PESSOATIPO</td>
+                    
+                </tr>
+            }
+
+        <tbody>
+    </table>
+</div>
