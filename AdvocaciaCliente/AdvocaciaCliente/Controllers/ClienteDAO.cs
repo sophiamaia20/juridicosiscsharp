@@ -48,5 +48,9 @@ namespace AdvocaciaCliente.DAL
             }
         }
 
+        internal bool inserirCliente(object categoriaDocumento)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
